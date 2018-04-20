@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>New Contact</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <h1>Fill in your details</h1>
+    <form action='/newcontact' method="POST">
+      <div class='form-group'>
+        <label for='name'>Your name</label>
+        <input id='name' name='name' class='form-control' type='text'>
+      </div>
+      <div class='form-group'>
+        <label for='address'>Your address</label>
+        <input id='address' name='address' class='form-control' type='text'>
+      </div>
+      <div class='form-group'>
+        <label for='phone'>Your phone number</label>
+        <input id='phone' name='phone' class='form-control' type='text'>
+      </div>
+      <button type='submit' class='btn'>Go!</button>
+    </form>
+
+  </body>
+</html>

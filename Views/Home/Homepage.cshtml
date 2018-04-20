@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Job Board</title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+
+  </head>
+  <body>
+
+  <h1>Address book</h1>
+
+    @foreach(var one in Model)
+    {
+      <li>@one.Getname()</li>
+      <li>@one.Getaddress()</li>
+      <li>@one.Getphone()</li>
+    }
+
+ <p><a href="/form">Add a contact</a></p>
+
+    <form action="/delete" method="post">
+
+      <button type="submit" name="button">Clear All Items</button>
+
+    </form>
+  </body>
+
+</html>
